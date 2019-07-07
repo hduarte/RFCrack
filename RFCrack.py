@@ -184,7 +184,7 @@ if args.rolling_code:
     attacks.rollingCode(d, rf_settings, args.rolling_code, args.jamming_variance)
 
 if args.known_scanner and not args.compare:
-    print("For a custom list use the -z option in the format -f 433000000 314000000 390000000")
+    print("For a custom list use the -k option in the format -f 433000000 314000000 390000000")
     findDevices.searchKnownFreqs(d, args.list)
 
 if args.brute_scanner:
